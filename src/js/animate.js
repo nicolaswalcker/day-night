@@ -85,8 +85,9 @@ export function flyOutAnim(target) {
 export function resetAnim(target) {
   target.style.transform = "none";
 }
-
+export let musicActive = false
 switcher.addEventListener("click", (e) => {
+  musicActive = false;
   pauseMusic(audioMoon);
   pauseMusic(audioSun);
   if (body.classList.contains("t-dark")) {
@@ -101,7 +102,7 @@ switcher.addEventListener("click", (e) => {
     flyInAnim(moon);
   }
 });
-export let musicActive = false
+
 sun.addEventListener("click", (e) => {
   pauseMusic(audioMoon);
   if (musicActive) {
