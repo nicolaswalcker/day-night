@@ -1,0 +1,15 @@
+.c-sun {
+  @include circle(200px, 200px);
+  position: absolute;
+  z-index: 10;
+  display: none;
+  cursor: pointer;
+  visibility: hidden;
+  background: $sun;
+  box-shadow: 0 0 50px $sun;
+  transition: $transition-duration all ease;
+  transform-origin: center;
+  &:hover {
+    box-shadow: 0 0 80px $sun;
+  }
+}

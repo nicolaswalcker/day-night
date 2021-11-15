@@ -30,6 +30,9 @@
     "stylelint-scss": "^4.0.0"
   },
   "dependencies": {
-    "parcel": "^2.0.1"
+    "@mojs/core": "^1.2.1",
+    "animejs": "^3.2.1",
+    "parcel": "^2.0.1",
+    "particles.js": "^2.0.0"
   }
 }

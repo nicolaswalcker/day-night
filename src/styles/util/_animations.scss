@@ -1,0 +1,19 @@
+.c-cloud--1 {
+  @include cloud-animations(0.65, 35);
+}
+
+.c-cloud--2 {
+  @include cloud-animations(0.3, 20);
+}
+
+.c-cloud--3 {
+  @include cloud-animations(0.5, 30);
+}
+
+.c-cloud--4 {
+  @include cloud-animations(0.4, 18);
+}
+
+.c-cloud--5 {
+  @include cloud-animations(0.55, 25);
+}

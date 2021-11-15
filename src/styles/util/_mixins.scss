@@ -1,0 +1,13 @@
+@mixin cloud-animations($scale, $time) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  transform: scale($scale);
+  -webkit-animation: animateCloud $time + s linear infinite;
+  -moz-animation: animateCloud $time + s linear infinite;
+  animation: animateCloud $time + s linear infinite;
+}
+@mixin circle($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}

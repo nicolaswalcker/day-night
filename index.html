@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Projects Template</title>
+    <title>Moon and sun</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,9 +14,53 @@
     />
   </head>
   <body>
-    <section class="c-section">
-      <h1 class="c-h1">Olá</h1>
-      <p class="c-description">Este é o Basic Project Template</p>
-    </section>
+    <header class="c-header">
+      <h1 class="c-header__title">Clique no sol ou na lua!</h1>
+    </header>
+    <audio class="js-audio--moon" src="./assets/lua.mp3"></audio>
+    <audio class="js-audio--sun" src="./assets/sol.mp3"></audio>
+    <label class="c-switch">
+      <input class="js-switch" type="checkbox" />
+      <span class="c-switch__slider c-switch__round"></span>
+    </label>
+    <div class="c-sun js-sun is-active"></div>
+    <div class="c-moon js-moon">
+      <ul class="c-moon__inside">
+        <li class="c-moon__dot"></li>
+        <li></li>
+        <li class="c-moon__dot"></li>
+        <li class="c-moon__dot"></li>
+        <li class="c-moon__dot"></li>
+        <li class="c-moon__dot"></li>
+        <li class="c-moon__dot"></li>
+      </ul>
+    </div>
+    <div class="l-stars js-stars" id="particles-js"></div>
+    <div class="l-clouds is-active js-clouds">
+      <div class="c-cloud--1">
+        <div class="c-cloud js-cloud"></div>
+      </div>
+
+      <div class="c-cloud--2">
+        <div class="c-cloud js-cloud"></div>
+      </div>
+
+      <div class="c-cloud--3">
+        <div class="c-cloud js-cloud"></div>
+      </div>
+
+      <div class="c-cloud--4">
+        <div class="c-cloud js-cloud"></div>
+      </div>
+
+      <div class="c-cloud--5">
+        <div class="c-cloud js-cloud"></div>
+      </div>
+    </div>
+    <script src="./node_modules/particles.js/particles.js"></script>
+    <script src="./src/js/particles-config.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script type="module" src="./src/js/animate.js"></script>
+    <script type="module" src="./src/js/switch.js"></script>
   </body>
 </html>
