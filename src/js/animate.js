@@ -5,6 +5,7 @@ const moon = document.querySelector(".js-moon");
 const body = document.querySelector("body");
 const audioMoon = document.querySelector(".js-audio--moon");
 const audioSun = document.querySelector(".js-audio--sun");
+
 const pauseMusic = (music) => {
   setTimeout(() => {
     music.pause();

@@ -2,7 +2,7 @@
   "name": "basic-project-template",
   "version": "1.0.0",
   "description": "Template for little and basic projects.",
-  "main": "app.js",
+  "source": "./index.html",
   "repository": "https://github.com/nicolaswalcker/basic-project-template",
   "author": "Nicolas Walcker",
   "license": "MIT",
